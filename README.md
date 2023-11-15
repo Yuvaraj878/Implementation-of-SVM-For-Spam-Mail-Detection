@@ -20,7 +20,7 @@ To write a program to implement the SVM For Spam Mail Detection.
 # Developed by: YUVARAJ.S
 # RegisterNumber: 22008589
 import chardet
-file='/content/spam.csv'
+file='spam.csv'
 with open(file,'rb') as rawdata:
   result = chardet.detect(rawdata.read(100000))
 result
