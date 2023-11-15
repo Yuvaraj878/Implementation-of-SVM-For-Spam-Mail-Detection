@@ -19,6 +19,11 @@ To write a program to implement the SVM For Spam Mail Detection.
 ```py
 # Developed by: YUVARAJ.S
 # RegisterNumber: 22008589
+import chardet
+file='/content/spam.csv'
+with open(file,'rb') as rawdata:
+  result = chardet.detect(rawdata.read(100000))
+result
 import pandas as pd
 data=pd.read_csv("spam.csv",encoding='latin-1')
 data.head()
@@ -43,6 +48,8 @@ accuracy
 ```
 
 ## Output:
+### File Result :
+![](./6.png)
 ### Data Head :
 ![](./1.png)
 ### Data Info :
